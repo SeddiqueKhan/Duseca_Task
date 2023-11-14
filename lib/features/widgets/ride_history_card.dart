@@ -75,7 +75,7 @@ class RideHistoryCard extends StatelessWidget {
               )
             ),
             const Positioned(
-                top: 60,
+                top: 70,
                 right: 30,
                 child: Row(
                   children: [

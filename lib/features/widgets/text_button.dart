@@ -15,7 +15,7 @@ class TextButtonWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0),
             )
         ),
-      backgroundColor: MaterialStateProperty.all(Colors.red),
+      backgroundColor: MaterialStateProperty.all(Colors.red.shade600),
     ),
         child: Text(buttonText, style: const TextStyle(color: Colors.white),));
   }

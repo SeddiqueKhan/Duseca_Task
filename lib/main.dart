@@ -1,7 +1,7 @@
-import 'package:duseca_task/book_seat/book_seat_screen.dart';
-import 'package:duseca_task/driver_info/driver_info_screen.dart';
-import 'package:duseca_task/ride_history/ride_history_screen.dart';
-import 'package:duseca_task/signup/signup_screen.dart';
+import 'package:duseca_task/features/book_seat/book_seat_screen.dart';
+import 'package:duseca_task/features/driver_info/driver_info_screen.dart';
+import 'package:duseca_task/features/ride_history/ride_history_screen.dart';
+import 'package:duseca_task/features/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
