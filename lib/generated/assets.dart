@@ -4,4 +4,8 @@ class Assets {
 
   static const String jpgVan = 'assets/jpg/van.jpg';
   static const String svgCar = 'assets/svg/car.svg';
+  static const String svgDot = 'assets/svg/dot.svg';
+  static const String svgLine = 'assets/svg/Line.svg';
+  static const String svgTriangle = 'assets/svg/triangle.svg';
+
 }

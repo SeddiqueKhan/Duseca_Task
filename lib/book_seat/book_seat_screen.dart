@@ -1,5 +1,5 @@
+import 'package:duseca_task/generated/assets.dart';
 import 'package:duseca_task/ride_history/ride_history_screen.dart';
-import 'package:duseca_task/svgs/svg_assets.dart';
 import 'package:duseca_task/widgets/text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
