@@ -24,6 +24,10 @@ class LabeledTextField extends StatelessWidget {
               borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0),
               borderRadius: BorderRadius.circular(30.0),
             ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0),
+              borderRadius: BorderRadius.circular(30.0),
+            ),
             contentPadding: const EdgeInsets.all(16.0),
           ),
         ),
