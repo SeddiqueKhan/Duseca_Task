@@ -20,9 +20,29 @@ class _BookSeatScreenState extends State<BookSeatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      title: const Text('Book Seat'),
-      centerTitle: true,
-      automaticallyImplyLeading: false),
+          title: const Text(
+            'Book Seat',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          automaticallyImplyLeading: false,
+          leading: InkWell(
+            child: Container(
+              width: 30,
+              height: 50,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.red,
+              ),
+            ),
+            onTap: (){
+              Navigator.pop(context);
+            },
+          )),
       body: Padding(
     padding: const EdgeInsets.all(8.0),
     child: Column(

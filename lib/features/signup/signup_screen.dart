@@ -22,7 +22,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
+          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0, bottom: 20.0),
           child: Column(
             children: [
               SizedBox(
@@ -59,7 +59,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       const Expanded(
                         child: Text(
-                          'Provide us your credentials to start\njourney with us.',
+                          'Provide us your credentials to start\n                   journey with us.',
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontSize: 18,
@@ -75,11 +75,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const LabeledTextField(label: 'Your name', hintText: 'e.g John Doe'),
-                    const LabeledTextField(label: 'Your email', hintText: 'youremail@gmail.com'),
-                    const LabeledTextField(label: 'Phone no*', hintText: '310-xxxxxxxx'),
-                    const LabeledTextField(label: 'Password', hintText: '.........'),
-                    const LabeledTextField(label: 'Confirm password', hintText: '.........'),
+                    const LabeledTextField(label: 'Your name', hintText: 'e.g John Doe', obscureText: false,),
+                    const SizedBox(height: 20.0,),
+                    const LabeledTextField(label: 'Your email', hintText: 'youremail@gmail.com', obscureText: false,),
+                    const SizedBox(height: 20.0,),
+                    const LabeledTextField(label: 'Phone no*', hintText: '310-xxxxxxxx', obscureText: false,),
+                    const SizedBox(height: 20.0,),
+                    const LabeledTextField(label: 'Password', hintText: '.........', obscureText: true,),
+                    const SizedBox(height: 20.0,),
+                    const LabeledTextField(label: 'Confirm password', hintText: '.........', obscureText: true,),
+                    const SizedBox(height: 20.0,),
                     const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [

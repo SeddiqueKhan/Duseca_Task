@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class LabeledTextField extends StatelessWidget {
   final String label;
   final String hintText;
+  final bool obscureText;
 
-  const LabeledTextField({required this.label, required this.hintText});
+  const LabeledTextField({super.key, required this.label, required this.hintText, required this.obscureText});
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +31,7 @@ class LabeledTextField extends StatelessWidget {
             ),
             contentPadding: const EdgeInsets.all(16.0),
           ),
+          obscureText: obscureText,
         ),
       ],
     );
